@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width.device-width  initial-scale=1.0">
+        <title> life style website design</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="ABOUT.html"><img src="pictures/th (2).png"></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li> <a href ="abhi.html"> Home</a></li>
+                        <li> <a href =" ABOUT.html"> About</a></li>
+                        <li> <a href ="designs.html"> Designs</a></li>
+                        <li> <a href ="contactus.html"> contact us</a></li>
+                        <li> <a href="login.html" >login</a></li>
+                    </ul>
+                    <i class="fa fa-bars"onclick="showMenu()"></i>
+                </div>
+            
+            </nav>
+            <h1>About us</h1>
+        </section>
+        <section class="About-us">
+            <div class="row">
+                <div class="About-col">
+                    <h3>We Have World Best  Interior Designs</h3>
+                    <p> We have a world best and perfect interior designs.we strive to create spaces that not only reflect our clients personalities and preferences but also enhance their daily lives. our approach encompasses a careful balance of functionality, aesthetics, and practically. From selecting the perfect color platte to sourcing unique furniture pieces and accessories, we aim to curate environments that inspire and delight. whether it's a cozy living room a sleek kitchen, or a tranquil bedroom retreat, we believe in infusing each space with character and charm.With our expertise and attention to detail, we look forword to collaborating with our clients to transform their vision into reality,creating home that truly resonate with their lifestyle and aspirations</p>
+                    <a href=" " class="hero-btn red-bth">Explore Now</a>
+                </div>
+                <div class="About-col"> 
+                    <img src="pictures/h5.png">
+                </div>
+            </div>
+        </section>       
+        <section class="footer">
+            <h4>About us </h4>
+            <p> hope we are helpful to choose a very classic and beautiful look of your house please contact us any time we are always available for our customers Thankyou so much for visiting our page</p>
+           <div class="icons">
+            <i class="fa fa-facebook"></i> 
+            <i class="fa fa-instagram"></i> 
+            <i class="fa fa-twitter"></i> 
+            <i class="fa fa-linkedin"></i> 
+           </div>  
+           <p>made with<i class="fa fa-heart-o"></i>by interior designs</p>    
+        </section>
+        <!-- <script src="abhi.js"></script> -->
+    </body>
+</html>
+<script>
+    let navlinks=document.getElementsById("navlinks");
+    function showMenu() {
+        navlinks.style.right="0";
+        
+    }
+    function hideMenu(){
+        navlinks.style.right="-200px";
+    }
+</script> 

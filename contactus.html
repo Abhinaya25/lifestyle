@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width.device-width  initial-scale=1.0">
+        <title> life style website design</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="abhi.html"><img src="pictures/th (2).png"></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li> <a href ="abhi.html"> Home</a></li>
+                        <li> <a href ="ABOUT.html"> About</a></li>
+                        <li> <a href ="designs.html"> Designs</a></li>
+                        <li> <a href ="contactus.html"> contact us</a></li>
+                        <li> <a href="login.html" >login</a></li>
+                    </ul>
+                    <i class="fa fa-bars" onclick="showMenu()"></i>
+                </div>
+            </nav>
+            <h1>contact-us</h1>    
+        </section>
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15229.668500223503!2d78.4638268!3d17.3917585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1709034624100!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+        </section>
+        <section class="contactus" >
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>XYZ Road ABC building</h5>
+                            <p>Hyderabad,telangana,india</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+910123456789</h5>
+                            <p>Monday to Saturday, 10am to 6pm/p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>info@interiordesign.com</h5>
+                            <p>email us your query</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col"> 
+                    <form action=" ">
+                        <input type="text" name="name"  placeholder="enter your name" required>
+                        <input type="email" name="email"  placeholder="enter your email" required>
+                        <input type="text" name="subject"  placeholder="enter your subject" required>
+                        <textarea row="8" name="message"  placeholder="message" required></textarea>
+                        <button type="submit" class="hero-btn red-bth">send message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <h4>About us </h4>
+            <p> hope we are helpful to choose a very classic and beautiful look of your house please contact us any time we are always available for our customers Thankyou so much for visiting our page</p>
+           <div class="icons">
+            <i class="fa fa-facebook"></i> 
+            <i class="fa fa-instagram"></i> 
+            <i class="fa fa-twitter"></i> 
+            <i class="fa fa-linkedin"></i> 
+           </div>  
+           <p>made with<i class="fa fa-heart-o"></i>by interior designs</p>    
+        </section>
+        <!-- <script src="abhi.js"></script> -->
+    </body>
+</html>
+<script>
+    let navlinks=document.getElementsById("navlinks");
+    function showMenu() {
+        navlinks.style.right="0";
+        
+    }
+    function hideMenu(){
+        navlinks.style.right="-200px";
+    }
+</script> 

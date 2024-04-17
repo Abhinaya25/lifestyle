@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width.device-width  initial-scale=1.0">
+        <title> life style website design</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        <section class="subheader">
+            <nav>
+                <a href="abhi.html"><img src="pictures/th (2).png"></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li> <a href ="abhi.html"> Home</a></li>
+                        <li> <a href ="ABOUT.html"> About</a></li>
+                        <li> <a href ="designs.html"> Designs</a></li>
+                        <li> <a href ="contactus.html"> contact us</a></li>
+                        <li> <a href="login.html" > login</a></li>
+                        
+                        <li><i class="fa fa-user-circle"></i></li>
+
+                    </ul>
+                    <i class="fa fa-bars" onclick="showMenu()"></i>
+                </div>
+            </nav>
+        </section>
+        
+        <section class="login">
+            <div class="wrapper">
+                <i class="fa fa-times" onclick="closeForm()"></i>
+                <div class="form-box-login">  
+                    <form id="loginForm">
+                        <h1>Login</h1>
+                        <div class="input-box">
+                            <input type="text" required><label>username</label>
+                        </div >
+                        <div class="input-box">
+                            <input type="text"required><label>password</label>
+    
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox">remember </label>
+                            <a href="#" >forgot password</a>
+                        </div>    
+                        <div>
+                            <button type="submit" class="btn">login</button>
+    
+                        </div>    
+                        <div class="login-register"> 
+                            <p>Don't  have an account
+                                <a href="#" class="register-link" onclick="toggleForm()">register</a>
+                            </p>      
+                        </div>
+                    </form>
+                </div>
+                        
+               
+        
+                  <div class="form-box-register">
+                
+                    <form id="registerForm" class="hidden">
+                        <h1>Register</h1>
+                        <div class="input-box">
+                            <input type="text" required><label>EnterName</label>
+                        </div >
+                        <div class="input-box">
+                            <input type="text"required><label>Email</label>
+    
+                        </div>
+                        <div class="input-box">
+                            <input type="text"required><label>password</label>
+    
+                        </div>
+                        <div class="termsAndCondition">
+                            <label><input type="checkbox">I agree to the all terms & condition</label>
+                        </div>    
+                        <div>
+                            <button type="submit" class="btn">register</button>
+    
+                        </div>    
+                        <div class="login-register"> 
+                            <p>i already have an account
+                                <a href="#" class="login-link" onclick="toggleForm()">login</a>
+                            </p>      
+                        </div>
+                    </form>
+            </div>
+                        
+                
+            
+        
+                
+                
+        
+        </section>
+        <!-- <script src="abhi.js"></script> -->
+    </body>
+</html>
+<script>
+    function toggleForm(){
+  function toggleVisibility(elementId){
+    const element=document.getElementById(elementId);
+    element.classList.toggle("hidden")
+  }
+  toggleVisibility("loginForm");
+  toggleVisibility("registerForm");
+
+}
+function closeForm(){
+    const fa=document.getElementsByClassName(".fa-times");
+}
+</script>
+<script>
+    let navLinks=document.getElementById("navlinks");
+function showMenu(){
+    navLinks.style.right="0";
+}
+function hideMenu(){
+    navLinks.style.right="-200px";
+}
+
+</script>
+   
+    
+
+
+   
